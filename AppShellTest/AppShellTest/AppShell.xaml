@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Shell xmlns="http://xamarin.com/schemas/2014/forms"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:appShellTest="clr-namespace:AppShellTest;assembly=AppShellTest"
+       
+       x:Class="AppShellTest.AppShell">
+
+    
+    <Shell.FlyoutHeader>
+        <Label Text="EatBox" HorizontalTextAlignment="Center" FontSize="39"/>
+    </Shell.FlyoutHeader>
+    <FlyoutItem Title="pizza">
+        <ShellContent Title="Test" ContentTemplate="{ DataTemplate appShellTest:TestPage}" Route="TestPage"></ShellContent>
+    </FlyoutItem>
+
+    <FlyoutItem Title="test">
+        <Tab >
+            <ShellContent Title="Test" ContentTemplate="{ DataTemplate appShellTest:TestPage}" Route="TestPage"></ShellContent>
+            <ShellContent Title="Test" ContentTemplate="{ DataTemplate appShellTest:TestPage}" Route="TestPage2"></ShellContent>
+        </Tab>
+    </FlyoutItem>
+
+</Shell>
